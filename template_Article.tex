@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, left=30mm, top=10mm, bottom=10mm, right=20mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+%\usepackage{fontspec}
+%\setmainfont{uarial}
+
+% Load blindtext package for dummy text
+\usepackage{blindtext}
+
+% Load the parskip package with skip and indent options
+\usepackage[skip=8pt plus1pt, indent=40pt]{parskip}
+\usepackage{indentfirst}
+% Load the setspace package
+\usepackage{setspace}
+
+\usepackage{anyfontsize}
+
+
+
+
+% Customs
+\renewenvironment{abstract}
+{\small
+	\begin{center}
+		\bfseries \abstractname\vspace{-.5em}\vspace{0pt}
+	\end{center}
+	\list{}{
+		\setlength{\leftmargin}{.0cm}%
+		\setlength{\rightmargin}{\leftmargin}%
+	}%
+	\item\relax}
+{\endlist}
+%End Customs
+
+%opening
+\title{Math for Machine Learning}
+
+\author{Chico Freitas\footnote{Professor de Física no IFPI-\textit{Campus} Teresina Central, prof.ofreitas@gmail.com}}
+
+\begin{document}
+
+%phv: Helvética
+{\fontfamily{phv}\selectfont
+	\begin{spacing}{1.5}
+	\maketitle
+	
+	\begin{abstract}
+		\begin{singlespace}
+			\noindent
+			%\begin{large}
+		
+				Este documento apresenta o modelo sugestivo de formatação para artigos
+			científicos da revista científica - Faculdade CET. O resumo é elemento obrigatório
+			constituído de uma sequência de frases objetivas e não uma enumeração de
+			tópicos, no mesmo idioma do trabalho, não se deve ultrapassar a 250 palavras,
+			sintetizando o tema em questão, objetivo do estudo, a metodologia e as
+			considerações finais a que se chegou. Deve-se evitar frases longas e não se recorre
+			a citações ou uso de qualquer tipo de ilustração (gráfico, tabela, fórmulas). Esse
+			resumo deve ficar na primeira página em Fonte Arial 12, espaçamento simples (1,0).
+			Para as palavras-chave recomendamos um parágrafo único com 3 (três) a 5 (cinco)
+			palavras separadas por ponto-e-vírgula, com a primeira letra de cada palavra em
+			maiúsculo e finalizadas por ponto, conforme o texto.
+			%\end{large}
+		\end{singlespace}
+
+		\textbf{Keywords:} Math, Machine Learning, Linear Algebra, Probability, Programming.
+	
+	\end{abstract}
+	
+	\section*{ \fontfamily{phv}\selectfont Introduction}
+			Este documento está escrito de acordo com o modelo indicado para o artigo,
+			assim, serve de referência, ao mesmo tempo em que comenta os diversos aspectos
+			da formatação. Observe as instruções e formate seu artigo de acordo com este
+			padrão. A redação do artigo deve considerar o público ao qual se destina. A2
+			linguagem
+			será
+			gramaticalmente
+			correta,
+			precisa,
+			coesa,
+			coerente
+			e,
+			preferencialmente, em terceira pessoa ou utilizando a impessoalização textual\par
+			
+			\blindtext[1]\par
+			
+			\blindtext[1]
+		
+	\section{Methods}
+			\blindtext[1]
+	
+	\section{Development}
+			
+			\blindtext[1]
+			
+			\begin{quotation}
+				
+				\begin{singlespace}
+					\noindent
+					\blindtext[1]
+					(DOE, 2022, p. 20)
+				\end{singlespace}
+			
+			\end{quotation}
+	
+	\section{Results}
+		
+			\blindtext[1]\par
+			
+			\blindtext[1]\par
+			
+			\blindtext[1]
+	
+	\section{Conclusions}
+
+			\blindtext[1]\par
+			
+			\blindtext[1]\par
+			
+			\blindtext[1]
+	\end{spacing}
+}% end font encode
+
+\end{document}
